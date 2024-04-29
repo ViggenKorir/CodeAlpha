@@ -1,0 +1,45 @@
+body{
+    height: 810px;
+    background:  -webkit-linear-gradient(bottom left, rgb(255, 0, 0) 0%,rgb(0, 136, 255)  100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.profile{
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    height: 30px;
+    list-style: none;
+    margin-top: 50px;
+    margin-inline: 500px;
+    color: black;
+}
+
+.profile :hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: aliceblue;
+}
+
+#head{
+    background-color: gray;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    right: 0%;
+    margin-inline: 11px;
+    margin-bottom: 2px;
+    list-style: none;
+}
+
+ #body{
+    background-color: gray;
+    width: 153px;
+    height: 70px;
+    margin-inline: -25px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    list-style: none;
+ }

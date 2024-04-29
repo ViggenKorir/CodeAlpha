@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Learning Management System</title>
+  <link href="reg.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Welcome to Your Learning Management System</h1>
+  <p>This system will help you manage and track your courses effectively.</p>
+
+  <div class="form-container">
+    <form action="process_registration.php" method="post" class="form">
+        <div class="form-background"></div> <!-- Background image container -->
+        <h1>Sign Up</h1>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required>
+        <br>
+        <input type="submit" value="Sign Up">
+        <p>Have an Account? <a href="Login.html">Log In</a></p>
+    </form>
+</div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-firestore.js"></script>
+  <script src="script.js"></script>
+
+  <script>
+    // Initialize Firebase
+    var firebaseConfig = {
+      apiKey: "AIzaSyCArjIBIdqXuR6weJbUdgrEEXxHksrNq_Q",
+      authDomain: "learning-management-plp.firebaseapp.com",
+      projectId: "learning-management-plp",
+      storageBucket: "learning-management-plp.appspot.com",
+      messagingSenderId: "538227314071",
+      appId: "1:538227314071:web:b1f6ba1c6b9efae52948d2",
+      measurementId: "G-TV6KHWFD8K"
+    };
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+  </script>
+
+</body>
+
+</html>
